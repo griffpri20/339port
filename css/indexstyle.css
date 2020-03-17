@@ -1,0 +1,133 @@
+body, html{
+    height: 100%;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: lighter;
+    animation-name: firstname;
+    animation-duration: 4s;
+
+}
+h2{
+    font-size: 75px;
+    font-family: monospace;
+    animation-name: lastname;
+    animation-duration: 4s;
+
+
+
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16pt;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/background.jpeg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.intro{
+    text-align: center;
+}
+
+.intro_text{
+    color: white;
+    padding: 15px;
+    position:absolute;
+    width:95%;
+    bottom:0;
+    text-align:center;
+
+}
+
+.nav_links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: auto;
+  flex-direction: row;
+  padding: 10px;
+  list-style: none;
+
+}
+
+.nav_item a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+.nav_item a:hover, a:focus{
+  color: #50C7C7;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+
+}
+
+.currentlink a{
+    color: #4169E1;
+}
+
+
+.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  margin-top: -40px;
+
+}
+
+@keyframes firstname {
+  from {font-size: 0;}
+  to {font-size: 40;}
+}
+
+@keyframes lastname {
+  from {font-size: 0;}
+  to {font-size: 75;}
+}
+
+@media (prefers-reduced-motion: reduce) {
+    h1, h2{
+    animation: none;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+/* Keep same */
+}
+
+@media screen and (min-width: 768px){
+    .nav_links{
+        justify-content: flex-end;
+    }
+
+    h1{
+        font-size: 65px;
+    }
+
+    h2{
+        font-size: 100px;
+    }
+
+    .intro_text{
+        text-align: left;
+    }
+
+}

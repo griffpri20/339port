@@ -1,0 +1,36 @@
+
+
+
+
+
+
+/* highlight the current page  */
+
+@media screen and (min-width: 800px){
+
+    .work_container{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .work_container img{
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+    .work_container a{
+        width: 75%;
+        margin: 10px;
+    }
+
+    h1{
+        font-size: 40px;
+        margin: 10px;
+    }
+
+
+}
